@@ -13,7 +13,7 @@ public class Main extends Plugin {
 	@Override
 	public void onEnable() {
 		getProxy().getPluginManager().registerListener(this, new JoinListener());
-		getProxy().getPluginManager().registerCommand(this, new Commands());
+		getProxy().getPluginManager().registerCommand(this, new WarnCommand());
 		
 		try {
 			c = MySQL.openConnection();
