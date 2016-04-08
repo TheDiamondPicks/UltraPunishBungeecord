@@ -30,7 +30,7 @@ public class JoinListener implements Listener {
 				String reason = res.getString("Reason");
 				player.disconnect(new TextComponent(
 						"§4§lKicked whilst connecting to §f§l" + player.getServer().getInfo().getName() + "§4§l:"
-								+ "\n§c§lYou have been permanently banned from this server!" + "\n" + "\n§3Reason: §f"
+								+ "\n§c§lYou have been permanently banned from this server!" + "\n" + "\n§bReason: §f"
 								+ reason + "\n" + "\n§bUnfairly banned? Appeal at §f192.168.1.23"));
 			}
 		} catch (SQLException e) {

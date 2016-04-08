@@ -14,6 +14,7 @@ public class Main extends Plugin {
 	public void onEnable() {
 		getProxy().getPluginManager().registerListener(this, new JoinListener());
 		getProxy().getPluginManager().registerCommand(this, new WarnCommand());
+		getProxy().getPluginManager().registerCommand(this, new ReportCommand());
 		
 		try {
 			c = MySQL.openConnection();
